@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CodeFirstTempModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="CodeFirstTempModelStoreContainer">
+    <EntitySet Name="Shop" EntityType="CodeFirstTempModel.Store.Shop" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserInfo" EntityType="CodeFirstTempModel.Store.UserInfo" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Shop_UserInfo" Association="CodeFirstTempModel.Store.FK_Shop_UserInfo">
+      <End Role="UserInfo" EntitySet="UserInfo" />
+      <End Role="Shop" EntitySet="Shop" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Shop">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="ShopName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ShopUrl" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UserInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Shop_UserInfo">
+    <End Role="UserInfo" Type="CodeFirstTempModel.Store.UserInfo" Multiplicity="1" />
+    <End Role="Shop" Type="CodeFirstTempModel.Store.Shop" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserInfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Shop">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

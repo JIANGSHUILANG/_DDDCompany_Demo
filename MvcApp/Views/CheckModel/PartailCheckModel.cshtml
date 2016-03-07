@@ -1,0 +1,9 @@
+﻿@using MvcApp.Models
+@model Person
+
+@if (Model != null)
+{
+    <input type="text"  id="id" name="id" value="@Model.ID"/>
+    <input type="text"  id="name" name="name" value="@Model.Name"/>
+    <input type="text"  id="age" name="age" value="@Model.Age"/>
+}

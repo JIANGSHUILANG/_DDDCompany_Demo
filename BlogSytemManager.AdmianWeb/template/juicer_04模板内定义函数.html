@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="/lib/jquery.js"></script>
+    <script src="/lib/juicer.js"></script>
+</head>
+<body>
+    <div id="dv"></div>
+</body>
+</html>
+<!--$$就把<strong>标签给去掉了-->
+<script id="tpl" type="text/template">
+    {#模板里用函数}
+    <h1>$${value|fontadd}</h1>
+
+    {@each i in range(50,60)}
+    ${i}
+    {@/each}
+    <br />
+
+
+    <!--
+    {@helper fontadd}
+        function(data){
+         return data.replace("com","");
+        }
+    {@/helper}   
+    -->
+</script>
+
+<script type="text/javascript">
+    $(function () {
+        var json = {
+            value: "<strong>http://ued.taobao.com</strong>"
+        };
+       
+        var html = juicer("#tpl", json);
+        $("#dv").append(html);
+    })
+</script>

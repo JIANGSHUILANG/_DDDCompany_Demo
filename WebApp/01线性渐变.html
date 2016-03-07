@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <!--教程地址：http://www.w3cplus.com/resources/css3-tutorial-and-case-->
+    <style>
+        .example {
+            width: 150px;
+            height: 80px;
+        }
+
+        /*IE内核不行*/
+        .example1 {
+            /*从上开始，由灰到黑*/
+            background: -webkit-linear-gradient(top,#ccc,#000);
+        }
+        .example2 {
+        background:-webkit-linear-gradient(left,#0094ff,#ccc);
+        }
+
+        example3 {
+  background:-moz-linear-gradient(left,#ace,#f96);/*Mozilla*/
+background:-webkit-gradient(linear,0 50%,100% 50%,from(#ace),to(#f96));/*Old gradient for webkit*/
+background:-webkit-linear-gradient(left,#ace,#f96);/*new gradient for Webkit*/
+background:-o-linear-gradient(left,#ace,#f96); /*Opera11*/
+        }
+    </style>
+</head>
+<body>
+    <div class="example example1"></div>
+    <div class="example" style="background:#ccc;"></div>
+    <div class="example"  style="background:#000;"></div>
+     <div class="example example2"></div>
+      <div class="example example3"></div>
+</body>
+</html>

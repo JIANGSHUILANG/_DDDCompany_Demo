@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=750, target-densitydpi=device-dpi, user-scalable=no">
+    <title>WebApp</title>
+    <script src="/lib/jquery.js"></script>
+    <script src="/lib/underscore.js"></script>
+    <script src="/lib/backbone.js"></script>
+</head>
+<body>
+</body>
+</html>
+<script type="text/javascript">
+
+    //backbone.js强依赖于underscore.js
+
+    //Backbone.js 和 Angluar.js 都是Javascript的MVC框架
+
+    //ListView类：是我们的主要的应用视图。
+
+    //initialize()：自动调用上述实例，你可以在这里做除了界面元素事件以外的所有类型的绑定，比如说单击事件等等。
+
+    //render()：用于渲染整个视图的函数。this.el：需要用户手动调用。
+
+    //listView实例：实例化整个视图
+
+    //自运行的闭包
+    (function ($) {
+        var List_View = Backbone.View.extend({
+            el: $("body"),
+            initialize: function () {
+                _.bindAll(this, 'render');
+                this.render();
+            },
+            render: function () {
+                $(this.el).append("<ul><li>Hello World</li></ul>");
+            }
+        });
+        
+        var listview = new List_View();
+    })(jQuery);
+
+
+    //(function ($) {
+    //    //自运行的闭包
+    //    var ListView = Backbone.View.extend({
+    //        el: $('body'), // attaches `this.el` to an existing element.
+
+    //        initialize: function () {
+    //            _.bindAll(this, 'render'); // fixes loss of context for 'this' within methods
+
+    //            this.render(); // not all views are self-rendering. This one is.
+    //        },
+
+    //        render: function () {
+    //            $(this.el).append("<ul> <li>hello world</li> </ul>");
+    //        }
+    //    });
+
+    //    var listView = new ListView();
+    //})(jQuery);
+</script>

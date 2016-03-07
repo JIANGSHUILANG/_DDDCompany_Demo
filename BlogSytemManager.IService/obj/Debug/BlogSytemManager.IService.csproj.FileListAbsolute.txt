@@ -1,0 +1,17 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.IService\bin\Debug\BlogSytemManager.IService.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.IService\bin\Debug\BlogSytemManager.IService.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.IService\bin\Debug\BlogSytemManager.DomainObject.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.IService\bin\Debug\BlogSytemManager.Infrastructure.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.IService\bin\Debug\BolgSytemManager.Domain.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.IService\bin\Debug\ExpressionSerialization.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.IService\bin\Debug\MongoDB.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.IService\bin\Debug\Dynamic.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.IService\bin\Debug\EntityFramework.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.IService\bin\Debug\BlogSytemManager.DomainObject.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.IService\bin\Debug\BlogSytemManager.Infrastructure.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.IService\bin\Debug\BolgSytemManager.Domain.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.IService\bin\Debug\MongoDB.xml
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.IService\bin\Debug\EntityFramework.xml
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.IService\obj\Debug\BlogSytemManager.IService.csprojResolveAssemblyReference.cache
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.IService\obj\Debug\BlogSytemManager.IService.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.IService\obj\Debug\BlogSytemManager.IService.pdb

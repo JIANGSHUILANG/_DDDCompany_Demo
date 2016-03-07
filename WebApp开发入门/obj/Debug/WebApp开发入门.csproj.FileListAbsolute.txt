@@ -1,0 +1,5 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WebApp开发入门\bin\WebApp开发入门.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WebApp开发入门\bin\WebApp开发入门.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WebApp开发入门\obj\Debug\WebApp开发入门.csprojResolveAssemblyReference.cache
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WebApp开发入门\obj\Debug\WebApp开发入门.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WebApp开发入门\obj\Debug\WebApp开发入门.pdb

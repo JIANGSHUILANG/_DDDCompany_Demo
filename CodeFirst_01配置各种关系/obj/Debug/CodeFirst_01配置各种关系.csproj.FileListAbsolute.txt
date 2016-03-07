@@ -1,0 +1,12 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\CodeFirst_01配置各种关系\obj\Debug\CodeFirst_01配置各种关系.csprojResolveAssemblyReference.cache
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\CodeFirst_01配置各种关系\bin\Debug\CodeFirst_01配置各种关系.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\CodeFirst_01配置各种关系\bin\Debug\EntityFramework.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\CodeFirst_01配置各种关系\bin\Debug\EntityFramework.xml
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\CodeFirst_01配置各种关系\obj\Debug\CodeFirst_01配置各种关系.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\CodeFirst_01配置各种关系\bin\Debug\CodeFirst_01配置各种关系.exe.config
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\CodeFirst_01配置各种关系\bin\Debug\CodeFirst_01配置各种关系.exe
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\CodeFirst_01配置各种关系\obj\Debug\CodeFirst_01配置各种关系.exe
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\CodeFirst_01配置各种关系\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\CodeFirst_01配置各种关系\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\CodeFirst_01配置各种关系\obj\Debug\CodeFirst_01配置各种关系.Migrations.InitialCreate.resources
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\CodeFirst_01配置各种关系\obj\Debug\CodeFirst_01配置各种关系.csproj.GenerateResource.Cache

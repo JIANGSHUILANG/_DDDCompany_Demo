@@ -1,0 +1,5 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Timer使用定时发推送消息\bin\Debug\Timer使用定时发推送消息.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Timer使用定时发推送消息\obj\Debug\Timer使用定时发推送消息.csprojResolveAssemblyReference.cache
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Timer使用定时发推送消息\obj\Debug\Timer使用定时发推送消息.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Timer使用定时发推送消息\bin\Debug\Timer使用定时发推送消息.exe
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Timer使用定时发推送消息\obj\Debug\Timer使用定时发推送消息.exe

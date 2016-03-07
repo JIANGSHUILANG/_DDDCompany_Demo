@@ -1,0 +1,13 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.Infrastructure\bin\Release\BlogSytemManager.Infrastructure.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.Infrastructure\bin\Release\BlogSytemManager.Infrastructure.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.Infrastructure\bin\Release\AutoMapper.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.Infrastructure\bin\Release\Dynamic.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.Infrastructure\bin\Release\ExpressionSerialization.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.Infrastructure\bin\Release\MongoDB.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.Infrastructure\bin\Release\MongoDB.GridFS.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.Infrastructure\bin\Release\AutoMapper.xml
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.Infrastructure\bin\Release\MongoDB.xml
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.Infrastructure\bin\Release\MongoDB.GridFS.xml
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.Infrastructure\obj\Release\BlogSytemManager.Infrastructure.csprojResolveAssemblyReference.cache
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.Infrastructure\obj\Release\BlogSytemManager.Infrastructure.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.Infrastructure\obj\Release\BlogSytemManager.Infrastructure.pdb

@@ -1,0 +1,5 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用_10_错误解决\bin\Debug\MongoDB使用_10_错误解决.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用_10_错误解决\bin\Debug\MongoDB使用_10_错误解决.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用_10_错误解决\obj\Debug\MongoDB使用_10_错误解决.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用_10_错误解决\obj\Debug\MongoDB使用_10_错误解决.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用_10_错误解决\obj\Debug\MongoDB使用_10_错误解决.csprojResolveAssemblyReference.cache

@@ -1,0 +1,5 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\ECharts使用\bin\ECharts使用.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\ECharts使用\bin\ECharts使用.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\ECharts使用\obj\Debug\ECharts使用.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\ECharts使用\obj\Debug\ECharts使用.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\ECharts使用\obj\Debug\ECharts使用.csprojResolveAssemblyReference.cache

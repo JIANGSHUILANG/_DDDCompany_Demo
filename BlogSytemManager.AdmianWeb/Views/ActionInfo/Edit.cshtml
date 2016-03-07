@@ -1,0 +1,112 @@
+﻿@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_LayoutblogSystemManager.cshtml";
+}
+
+@using BlogSytemManager.DomainObject
+@model ActionInfoObject
+
+<!-- content start -->
+<div class="admin-content">
+
+    <div class="am-cf am-padding">
+        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">方法管理</strong>/ <small>编辑</small></div>
+    </div>
+
+    <div class="am-tabs am-margin" data-am-tabs>
+        <ul class="am-tabs-nav am-nav am-nav-tabs">
+            <li class="am-active"><a href="#tab1">基本信息</a></li>
+            <li><a href="#tab2">权限分配</a></li>
+        </ul>
+        <div class="am-tabs-bd">
+            <div class="am-tab-panel am-fade am-in am-active" id="tab1">
+                <form class="am-form" method="post" action="/ActionInfo/Edit" id="uploadcreateuserinfo">
+                    <input type="hidden" name="ID" value="@Model.ID"/>
+                    <div class="am-g am-margin-top">
+                        <div class="am-u-sm-4 am-u-md-2 am-text-right">
+                            方法名称
+           
+                        </div>
+                        <div class="am-u-sm-8 am-u-md-4">
+                            <input type="text" name="ActionInfoName" value="@Model.ActionInfoName" class="am-input-sm" required>
+                        </div>
+                        <div class="am-hide-sm-only am-u-md-6">*必填，不可重复</div>
+                    </div>
+
+                    <div class="am-g am-margin-top">
+                        <div class="am-u-sm-4 am-u-md-2 am-text-right">
+                            对应URL
+           
+                        </div>
+                        <div class="am-u-sm-8 am-u-md-4 am-u-end col-end">
+                            <input type="text" name="Url" value="@Model.Url" class="am-input-sm" required>
+                        </div>
+                        <div class="am-hide-sm-only am-u-md-6">*必填，不可重复</div>
+                    </div>
+                    <input type="hidden" name="DelFlag" value="1" />
+
+                        <div class="am-g am-margin-top">
+                        <div class="am-u-sm-4 am-u-md-2 am-text-right">
+                            请求方式
+           
+                        </div>
+                        <div class="am-u-sm-8 am-u-md-4">
+                            <input type="text" name="HttpMethod" value="@Model.HttpMethod" class="am-input-sm">
+                        </div>
+                        <div class="am-hide-sm-only am-u-md-6">选填</div>
+                    </div>
+
+
+                    <div class="am-g am-margin-top">
+                        <div class="am-u-sm-4 am-u-md-2 am-text-right">
+                            排序方式
+           
+                        </div>
+                        <div class="am-u-sm-8 am-u-md-4">
+                            <input type="text" name="shot" value="@Model.shot" class="am-input-sm">
+                        </div>
+                        <div class="am-hide-sm-only am-u-md-6">选填</div>
+                    </div>
+
+                    <div class="am-g am-margin-top">
+                        <div class="am-u-sm-4 am-u-md-2 am-text-right">
+                            创建时间
+           
+                        </div>
+                        <div class="am-u-sm-8 am-u-md-4">
+                            <input type="datetime" name="SubTime" value="@Model.SubTime" class="am-input-sm">
+                        </div>
+                        <div class="am-hide-sm-only am-u-md-6">选填</div>
+                    </div>
+
+                    <div class="am-g am-margin-top">
+                        <div class="am-u-sm-4 am-u-md-2 am-text-right">
+                            备注
+           
+                        </div>
+                        <div class="am-u-sm-8 am-u-md-4">
+                            <input type="text" name="content" value="@Model.content" class="am-input-sm">
+                        </div>
+                        <div class="am-hide-sm-only am-u-md-6">选填</div>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="am-margin">
+        <button type="button" class="am-btn am-btn-primary am-btn-xs" onclick="uploadcreateuserinfo()">提交保存</button>
+        <a type="button" class="am-btn am-btn-primary am-btn-xs" href="javascript:history.go(-1);location.reload();">放弃保存</a>
+    </div>
+</div>
+<!-- content end -->
+
+<script type="text/javascript">
+    function uploadcreateuserinfo() {
+        $("#uploadcreateuserinfo").submit();
+    }
+</script>
+
+

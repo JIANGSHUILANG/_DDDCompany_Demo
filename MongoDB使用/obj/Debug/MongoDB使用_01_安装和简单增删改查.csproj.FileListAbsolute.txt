@@ -1,0 +1,4 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用\bin\Debug\MongoDB使用_01_安装和简单增删改查.exe
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用\bin\Debug\MongoDB使用_01_安装和简单增删改查.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用\obj\Debug\MongoDB使用_01_安装和简单增删改查.exe
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用\obj\Debug\MongoDB使用_01_安装和简单增删改查.pdb

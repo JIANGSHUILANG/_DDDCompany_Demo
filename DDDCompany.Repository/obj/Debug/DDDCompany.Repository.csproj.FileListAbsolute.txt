@@ -1,0 +1,13 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DDDCompany.Repository\bin\Debug\DDDCompany.Repository.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DDDCompany.Repository\bin\Debug\DDDCompany.Repository.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DDDCompany.Repository\bin\Debug\DDDCompany.Domain.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DDDCompany.Repository\bin\Debug\DDDCompany.Infrastructure.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DDDCompany.Repository\bin\Debug\EntityFramework.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DDDCompany.Repository\bin\Debug\DDDCompany.Domain.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DDDCompany.Repository\bin\Debug\DDDCompany.Infrastructure.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DDDCompany.Repository\bin\Debug\EntityFramework.xml
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DDDCompany.Application\bin\Debug\DDDCompany.Repository.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DDDCompany.Application\bin\Debug\DDDCompany.Repository.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DDDCompany.Repository\obj\Debug\DDDCompany.Repository.csprojResolveAssemblyReference.cache
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DDDCompany.Repository\obj\Debug\DDDCompany.Repository.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DDDCompany.Repository\obj\Debug\DDDCompany.Repository.pdb

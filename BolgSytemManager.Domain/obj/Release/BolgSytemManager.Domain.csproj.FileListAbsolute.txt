@@ -1,0 +1,11 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BolgSytemManager.Domain\bin\Release\BolgSytemManager.Domain.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BolgSytemManager.Domain\bin\Release\BolgSytemManager.Domain.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BolgSytemManager.Domain\bin\Release\BlogSytemManager.DomainObject.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BolgSytemManager.Domain\bin\Release\EntityFramework.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BolgSytemManager.Domain\bin\Release\Newtonsoft.Json.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BolgSytemManager.Domain\bin\Release\BlogSytemManager.DomainObject.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BolgSytemManager.Domain\bin\Release\EntityFramework.xml
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BolgSytemManager.Domain\bin\Release\Newtonsoft.Json.xml
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BolgSytemManager.Domain\obj\Release\BolgSytemManager.Domain.csprojResolveAssemblyReference.cache
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BolgSytemManager.Domain\obj\Release\BolgSytemManager.Domain.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BolgSytemManager.Domain\obj\Release\BolgSytemManager.Domain.pdb

@@ -1,0 +1,7 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WCF_01_Binding的使用_netMsmqBinding_调用\obj\Debug\WCF_01_Binding的使用_netMsmqBinding_调用.csprojResolveAssemblyReference.cache
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WCF_01_Binding的使用_netMsmqBinding_调用\bin\Debug\WCF_01_Binding的使用_netMsmqBinding_调用.exe
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WCF_01_Binding的使用_netMsmqBinding_调用\bin\Debug\WCF_01_Binding的使用_netMsmqBinding_调用.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WCF_01_Binding的使用_netMsmqBinding_调用\bin\Debug\WCF_01_Binding的使用_netMsmqBinding.exe
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WCF_01_Binding的使用_netMsmqBinding_调用\bin\Debug\WCF_01_Binding的使用_netMsmqBinding.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WCF_01_Binding的使用_netMsmqBinding_调用\obj\Debug\WCF_01_Binding的使用_netMsmqBinding_调用.exe
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WCF_01_Binding的使用_netMsmqBinding_调用\obj\Debug\WCF_01_Binding的使用_netMsmqBinding_调用.pdb

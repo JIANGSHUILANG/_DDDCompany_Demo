@@ -1,0 +1,93 @@
+﻿<#@ template language="C#" HostSpecific="True" #>
+<#
+MvcTextTemplateHost mvcHost = (MvcTextTemplateHost)(Host);
+#>
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+
+
+namespace <#= mvcHost.Namespace #>
+{
+	public class <#= mvcHost.ControllerName #> : BaseAdminController
+	{
+
+	 I<#= mvcHost.ControllerRootName #>Service <#= mvcHost.ControllerRootName #>service = new <#= mvcHost.ControllerRootName #>Service();
+		
+		 public ActionResult Index()
+        {
+
+            var temp = <#= mvcHost.ControllerRootName #>service.LoadEntities(c => true).ToList();
+            return View(temp);
+        }
+
+        
+        public ActionResult Details(string id = null)
+        {
+            var temp = <#= mvcHost.ControllerRootName #>service.LoadEntities(c => c.ID == Convert.ToInt32(id)).FirstOrDefault();
+            if (temp == null)
+            {
+                return HttpNotFound();
+            }
+            return View(temp);
+        }
+
+       
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+     
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(<#= mvcHost.ControllerRootName #> model)
+        {
+            if (ModelState.IsValid)
+            {
+                <#= mvcHost.ControllerRootName #>service.AddEntity(model);
+                return RedirectToAction("Index");
+            }
+
+            return View(model);
+        }
+
+        
+        public ActionResult Edit(string id = null)
+        {
+            var temp = <#= mvcHost.ControllerRootName #>service.LoadEntities(c => c.ID == Convert.ToInt32(id)).FirstOrDefault();
+            if (temp == null)
+            {
+                return HttpNotFound();
+            }
+            return View(temp);
+        }
+
+       
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(<#= mvcHost.ControllerRootName #> model)
+        {
+            if (ModelState.IsValid)
+            {
+                <#= mvcHost.ControllerRootName #>service.UpdateEntity(model);
+                return RedirectToAction("Index");
+            }
+            return View(model);
+        }
+
+     
+        public ActionResult Delete(string id = null)
+        {
+            var temp = <#= mvcHost.ControllerRootName #>service.LoadEntities(c => c.ID == Convert.ToInt32(id)).FirstOrDefault();
+            if (temp == null)
+            {
+                return HttpNotFound();
+            }
+            return View(temp);
+        }
+	}
+}

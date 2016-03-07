@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://www.CC.com" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.CC.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.CC.com/Imports">
+      <xsd:import schemaLocation="http://localhost:7911/UserInfoService.svc?xsd=xsd0" namespace="http://www.CC.com" />
+      <xsd:import schemaLocation="http://localhost:7911/UserInfoService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:7911/UserInfoService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BlogSytemManager.DomainObject" />
+      <xsd:import schemaLocation="http://localhost:7911/UserInfoService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IUserInfoService_GetAllUserInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUserInfo" />
+  </wsdl:message>
+  <wsdl:message name="IUserInfoService_GetAllUserInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUserInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserInfoService_GetUserInfoById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserInfoById" />
+  </wsdl:message>
+  <wsdl:message name="IUserInfoService_GetUserInfoById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserInfoByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserInfoService_GetUserInfopageOfitems_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserInfopageOfitems" />
+  </wsdl:message>
+  <wsdl:message name="IUserInfoService_GetUserInfopageOfitems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserInfopageOfitemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserInfoService_DeleteUserInfoById_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserInfoById" />
+  </wsdl:message>
+  <wsdl:message name="IUserInfoService_DeleteUserInfoById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserInfoByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserInfoService_DeleteUserInfos_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserInfos" />
+  </wsdl:message>
+  <wsdl:message name="IUserInfoService_DeleteUserInfos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserInfosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserInfoService_UpdateUserInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserInfo" />
+  </wsdl:message>
+  <wsdl:message name="IUserInfoService_UpdateUserInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserInfoService_UpdateUserInfos_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserInfos" />
+  </wsdl:message>
+  <wsdl:message name="IUserInfoService_UpdateUserInfos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserInfosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserInfoService_CreateUserInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateUserInfo" />
+  </wsdl:message>
+  <wsdl:message name="IUserInfoService_CreateUserInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateUserInfoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IUserInfoService">
+    <wsdl:operation name="GetAllUserInfo">
+      <wsdl:input wsaw:Action="http://www.CC.com/IUserInfoService/GetAllUserInfo" message="tns:IUserInfoService_GetAllUserInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.CC.com/IUserInfoService/GetAllUserInfoResponse" message="tns:IUserInfoService_GetAllUserInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfoById">
+      <wsdl:input wsaw:Action="http://www.CC.com/IUserInfoService/GetUserInfoById" message="tns:IUserInfoService_GetUserInfoById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.CC.com/IUserInfoService/GetUserInfoByIdResponse" message="tns:IUserInfoService_GetUserInfoById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfopageOfitems">
+      <wsdl:input wsaw:Action="http://www.CC.com/IUserInfoService/GetUserInfopageOfitems" message="tns:IUserInfoService_GetUserInfopageOfitems_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.CC.com/IUserInfoService/GetUserInfopageOfitemsResponse" message="tns:IUserInfoService_GetUserInfopageOfitems_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserInfoById">
+      <wsdl:input wsaw:Action="http://www.CC.com/IUserInfoService/DeleteUserInfoById" message="tns:IUserInfoService_DeleteUserInfoById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.CC.com/IUserInfoService/DeleteUserInfoByIdResponse" message="tns:IUserInfoService_DeleteUserInfoById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserInfos">
+      <wsdl:input wsaw:Action="http://www.CC.com/IUserInfoService/DeleteUserInfos" message="tns:IUserInfoService_DeleteUserInfos_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.CC.com/IUserInfoService/DeleteUserInfosResponse" message="tns:IUserInfoService_DeleteUserInfos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserInfo">
+      <wsdl:input wsaw:Action="http://www.CC.com/IUserInfoService/UpdateUserInfo" message="tns:IUserInfoService_UpdateUserInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.CC.com/IUserInfoService/UpdateUserInfoResponse" message="tns:IUserInfoService_UpdateUserInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserInfos">
+      <wsdl:input wsaw:Action="http://www.CC.com/IUserInfoService/UpdateUserInfos" message="tns:IUserInfoService_UpdateUserInfos_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.CC.com/IUserInfoService/UpdateUserInfosResponse" message="tns:IUserInfoService_UpdateUserInfos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateUserInfo">
+      <wsdl:input wsaw:Action="http://www.CC.com/IUserInfoService/CreateUserInfo" message="tns:IUserInfoService_CreateUserInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.CC.com/IUserInfoService/CreateUserInfoResponse" message="tns:IUserInfoService_CreateUserInfo_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

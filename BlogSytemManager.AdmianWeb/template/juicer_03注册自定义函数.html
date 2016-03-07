@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="/lib/jquery.js"></script>
+    <script src="/lib/juicer.js"></script>
+</head>
+<body>
+    <div id="dv">
+    </div>
+</body>
+</html>
+<script id="tpl" type="text/template">
+    {@each links as item,index}
+    (${index}):${item|funclink}<br />
+    {@/each}
+</script>
+
+<script type="text/javascript">
+    $(function () {
+        var json = {
+            links: [
+                { href: 'http://juicer.name', alt: 'Juicer' },
+                { href: 'http://benben.cc', alt: 'Benben' },
+                { href:'<strong>http://ued.taobao.com</strong>', alt: 'Taobao UED' }
+            ]
+        };
+
+        //var escap_tpl='${links}';
+
+        juicer.register("funclink", link);
+        var html = juicer("#tpl", json);
+        $("#dv").append(html);
+
+
+
+        //&lt;a href=&quot;http://juicer.name&quot; alt=&quot;Juicer&quot; <br />
+        //    &lt;a href=&quot;http://benben.cc&quot; alt=&quot;Benben&quot; <br />
+        //    &lt;a href=&quot;http://ued.taobao.com&quot; alt=&quot;Taobao UED&quot; <br />
+
+    })
+
+    var link = function (data) {
+        return '  <a href="' + data.href + '" alt="' + data.alt + '">' + data.href + '</a>';
+    }
+</script>

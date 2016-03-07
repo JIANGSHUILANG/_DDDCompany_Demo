@@ -1,0 +1,14 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\正则表达式\bin\Debug\正则表达式.exe
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\正则表达式\bin\Debug\正则表达式.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\正则表达式\obj\Debug\正则表达式.exe
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\正则表达式\obj\Debug\正则表达式.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\正则表达式\bin\Debug\Newtonsoft.Json.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\正则表达式\bin\Debug\Newtonsoft.Json.xml
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\正则表达式\obj\Debug\正则表达式.csprojResolveAssemblyReference.cache
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\正则表达式\bin\Debug\正则表达式.exe.config
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\正则表达式\bin\Debug\BlogSytemManager.Infrastructure.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\正则表达式\bin\Debug\ExpressionSerialization.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\正则表达式\bin\Debug\BlogSytemManager.Infrastructure.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\正则表达式\bin\Debug\Dynamic.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\正则表达式\bin\Debug\MongoDB.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\正则表达式\bin\Debug\MongoDB.xml

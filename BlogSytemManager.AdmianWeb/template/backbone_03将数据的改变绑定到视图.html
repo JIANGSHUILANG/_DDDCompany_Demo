@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="/lib/jquery.js"></script>
+    <script src="/lib/underscore.js"></script>
+    <script src="/lib/backbone.js"></script>
+</head>
+<body>
+</body>
+</html>
+<script>
+    (function ($) {
+        //Item 类：模型层的原子（最小）部分。壹个模型是壹个基本的Javascript对象，例如：键值对，以及壹些用于事件响应、数据持久化的帮助函数等。
+        var Item = Backbone.Model.extend({
+            defaults: {
+                parm_1: "Hello",
+                parm_2: "World"
+            }
+        });
+
+        //List 类：壹个条目的集合。基本上是壹些模型对象的数组和壹些帮助函数。
+        var List = Backbone.Collection.extend({
+            model: Item
+        });
+
+        var ListView = Backbone.View.extend({
+            el: $("body"),
+            events: {
+                //id为add邦定点击事件，事件执行的方法：addItem
+                "click button#add": "addItem"
+            },
+            initialize: function () {
+                _.bindAll(this, "render", "addItem", "appendItem");
+
+                this.collection = new List();
+
+                this.collection.bind("add", this.appendItem);
+
+                this.counter = 0;
+                this.render();
+            },
+            render: function () {
+                var self = this;
+                $(this.el).append('<button id="add">添加HelloWorld</button>');
+                $(this.el).append('<ul></ul>');
+                //alert(this.collection.models.length);
+                _(this.collection.models).each(function (item) {
+                    self.appendItem(item);
+                }, this)
+            },
+            addItem: function () {
+                this.counter++;
+                var item = new Item();
+                item.set({ "parm_2": item.get("parm_2") + this.counter });
+                this.collection.add(item);
+            },
+            appendItem: function (item) {
+                $("ul", this.el).append("<li>" + item.get("parm_1") + "_" + item.get("parm_2") + "</li>");
+            }
+        });
+
+        var listview = new ListView();
+    })(jQuery);
+</script>

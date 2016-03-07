@@ -1,0 +1,9 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Lib\WCF传递参数不支持序列化解决方案\expressiontree-9804\NorthwindService\bin\Debug\app.config
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Lib\WCF传递参数不支持序列化解决方案\expressiontree-9804\NorthwindService\bin\Debug\Northwind.dll.config
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Lib\WCF传递参数不支持序列化解决方案\expressiontree-9804\NorthwindService\bin\Debug\Northwind.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Lib\WCF传递参数不支持序列化解决方案\expressiontree-9804\NorthwindService\bin\Debug\Northwind.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Lib\WCF传递参数不支持序列化解决方案\expressiontree-9804\NorthwindService\bin\Debug\ExpressionSerialization.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Lib\WCF传递参数不支持序列化解决方案\expressiontree-9804\NorthwindService\bin\Debug\ExpressionSerialization.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Lib\WCF传递参数不支持序列化解决方案\expressiontree-9804\NorthwindService\obj\Debug\NorthwindService.csprojResolveAssemblyReference.cache
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Lib\WCF传递参数不支持序列化解决方案\expressiontree-9804\NorthwindService\obj\Debug\Northwind.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Lib\WCF传递参数不支持序列化解决方案\expressiontree-9804\NorthwindService\obj\Debug\Northwind.pdb

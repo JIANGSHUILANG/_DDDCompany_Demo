@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="/lib/jquery.js"></script>
+    <script src="/lib/underscore.js"></script>
+    <script src="/lib/backbone.js"></script>
+</head>
+<body>
+    <button id="tempbtn">++++</button>
+</body>
+</html>
+<script>
+    (function ($) {
+        var listview = Backbone.View.extend({
+            el: $("body"),
+            events: {
+                "click button#btn": "addhelloworld",
+                "click button#tempbtn":"temp"
+            },
+            initialize: function () {
+                _.bindAll(this, "render", "addhelloworld", "temp");
+                this.counter = 0;
+                this.render();
+            },
+            render: function () {
+                $(this.el).append('<button id="btn">添加HelloWorld</button>');
+                $(this.el).append('<ul></ul>');
+            },
+            addhelloworld: function () {
+                this.counter++;
+                $("ul", this.el).append("<li>HelloWorld_" + this.counter + "</li>");
+            },
+            temp: function () {
+                alert(this.counter); //
+            }
+        })
+
+        var view = new listview();
+    })(jQuery);
+</script>

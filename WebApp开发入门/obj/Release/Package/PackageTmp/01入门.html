@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+ 
+    <!--注意事项：-->
+    <!--1、每条数据都放在a标签中,因为在触控手机上，为提升用户体验，尽可能的保证用户的可点击区域较大。-->
+    <!--2、不建议前端工程师把容器（不管是外层容器还是内层）的宽度定死。为达到适配各种手持设备-->
+    <!--3、如何在移动设备上做到完全自适应呢？很感谢webkit为display属性提供了一个webkit-box的值，它可以帮助前端工程师做到盒子模型灵活控制-->
+    <style>
+        /*之前要实现横列的web布局，通常就是float或者display：inline-block;但是都不能做到真正的流体布局,
+            可以直接使用display:-webkit-box;*/ 
+        现在使用
+        #nv ul{   
+        display:-webkit-box;
+        -webkit-box-orient:horizontal; /*-webkit-box有很多属性*/
+        -webkit-box-flex:1;
+        /*-webkit-box-flex:*/
+        /*-webkit-animation:*/
+        list-style-type:none;
+        }
+    </style>
+</head>
+<body>
+    <!--导航-->
+    <nav id="nv">
+        <ul>
+            <li><a>首页</a></li>
+            <li><a>About</a></li>
+            <li><a>素材</a></li>
+        </ul>
+    </nav>
+
+    <br />
+    <!--内容或文章-->
+    <section>
+        
+    </section>
+    <br />
+
+    <div style="color:#c1aeae;height:auto;">
+        dd
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\消息队列\bin\Debug\消息队列.exe.config
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\消息队列\bin\Debug\消息队列.exe
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\消息队列\bin\Debug\消息队列.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\消息队列\obj\Debug\消息队列.csprojResolveAssemblyReference.cache
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\消息队列\obj\Debug\消息队列.exe
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\消息队列\obj\Debug\消息队列.pdb

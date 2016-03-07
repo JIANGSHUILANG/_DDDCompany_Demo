@@ -1,0 +1,1 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WCF_03_心跳包\obj\Debug\WCF_03_心跳包.csprojResolveAssemblyReference.cache

@@ -1,0 +1,12 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DbContext实现异步接口\obj\Debug\DbContextRepository去实现异步接口.csprojResolveAssemblyReference.cache
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DbContext实现异步接口\bin\Debug\DbContext实现异步接口.dll.config
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DbContext实现异步接口\bin\Debug\DbContext实现异步接口.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DbContext实现异步接口\bin\Debug\DbContext实现异步接口.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DbContext实现异步接口\bin\Debug\CodeFirst_01配置各种关系.exe
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DbContext实现异步接口\bin\Debug\EntityFramework.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DbContext实现异步接口\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DbContext实现异步接口\bin\Debug\CodeFirst_01配置各种关系.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DbContext实现异步接口\bin\Debug\EntityFramework.xml
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DbContext实现异步接口\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DbContext实现异步接口\obj\Debug\DbContext实现异步接口.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DbContext实现异步接口\obj\Debug\DbContext实现异步接口.pdb

@@ -1,0 +1,88 @@
+﻿@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_LayoutblogSystemManager.cshtml";
+}
+
+<!-- content start -->
+<div class="admin-content">
+
+    <div class="am-cf am-padding">
+        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">角色管理</strong>/ <small>新增</small></div>
+    </div>
+
+    <div class="am-tabs am-margin" data-am-tabs>
+        <ul class="am-tabs-nav am-nav am-nav-tabs">
+            <li class="am-active"><a href="#tab1">基本信息</a></li>
+            <li><a href="#tab2">权限分配</a></li>
+        </ul>
+
+        <div class="am-tabs-bd">
+            <div class="am-tab-panel am-fade am-in am-active" id="tab1">
+                <form class="am-form" method="post" action="/Role/Create" id="uploadcreateuserinfo">
+
+                    <div class="am-g am-margin-top">
+                        <div class="am-u-sm-4 am-u-md-2 am-text-right">
+                            角色名称
+           
+                        </div>
+                        <div class="am-u-sm-8 am-u-md-4">
+                            <input type="text" name="RoleName" class="am-input-sm" required>
+                        </div>
+                        <div class="am-hide-sm-only am-u-md-6">*必填，不可重复</div>
+                    </div>
+
+                    <div class="am-g am-margin-top">
+                        <div class="am-u-sm-4 am-u-md-2 am-text-right">
+                            备注信息
+           
+                        </div>
+                        <div class="am-u-sm-8 am-u-md-4 am-u-end col-end">
+                            <input type="text" name="Remark" class="am-input-sm" required>
+                        </div>
+                        <div class="am-hide-sm-only am-u-md-6">选填</div>
+                    </div>
+
+  
+
+                    <div class="am-g am-margin-top">
+                        <div class="am-u-sm-4 am-u-md-2 am-text-right">
+                            排序方式
+           
+                        </div>
+                        <div class="am-u-sm-8 am-u-md-4">
+                            <input type="text" name="shot" class="am-input-sm">
+                        </div>
+                        <div class="am-hide-sm-only am-u-md-6">选填</div>
+                    </div>
+
+                    <div class="am-g am-margin-top">
+                        <div class="am-u-sm-4 am-u-md-2 am-text-right">
+                            创建时间
+           
+                        </div>
+                        <div class="am-u-sm-8 am-u-md-4">
+                            <input type="datetime" name="SubTime" class="am-input-sm">
+                        </div>
+                        <div class="am-hide-sm-only am-u-md-6">选填</div>
+                    </div>
+                </form>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <div class="am-margin">
+        <button type="button" class="am-btn am-btn-primary am-btn-xs" onclick="uploadcreateuserinfo()">提交保存</button>
+        <a type="button" class="am-btn am-btn-primary am-btn-xs" href="javascript:history.go(-1);location.reload();">放弃保存</a>
+    </div>
+</div>
+<!-- content end -->
+
+<script type="text/javascript">
+    function uploadcreateuserinfo() {
+        $("#uploadcreateuserinfo").submit();
+    }
+
+
+</script>

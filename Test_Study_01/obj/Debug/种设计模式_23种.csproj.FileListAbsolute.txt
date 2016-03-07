@@ -1,0 +1,5 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Test_Study_01\bin\Debug\Test_Study_01.exe.config
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Test_Study_01\bin\Debug\Test_Study_01.exe
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Test_Study_01\bin\Debug\Test_Study_01.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Test_Study_01\obj\Debug\Test_Study_01.exe
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Test_Study_01\obj\Debug\Test_Study_01.pdb

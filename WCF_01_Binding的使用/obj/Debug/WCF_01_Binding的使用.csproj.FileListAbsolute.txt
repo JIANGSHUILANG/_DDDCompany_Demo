@@ -1,0 +1,6 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WCF_01_Binding的使用\bin\Debug\WCF_01_Binding的使用.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WCF_01_Binding的使用\obj\Debug\WCF_01_Binding的使用.csprojResolveAssemblyReference.cache
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WCF_01_Binding的使用\obj\Debug\WCF_01_Binding的使用.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WCF_01_Binding的使用\bin\Debug\WCF_01_Binding的使用.exe.config
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WCF_01_Binding的使用\bin\Debug\WCF_01_Binding的使用.exe
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WCF_01_Binding的使用\obj\Debug\WCF_01_Binding的使用.exe

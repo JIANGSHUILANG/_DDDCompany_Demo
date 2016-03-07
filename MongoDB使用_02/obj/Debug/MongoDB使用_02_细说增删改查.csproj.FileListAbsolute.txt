@@ -1,0 +1,5 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用_02\bin\Debug\MongoDB使用_02_细说增删改查.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用_02\bin\Debug\MongoDB使用_02_细说增删改查.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用_02\obj\Debug\MongoDB使用_02_细说增删改查.csprojResolveAssemblyReference.cache
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用_02\obj\Debug\MongoDB使用_02_细说增删改查.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用_02\obj\Debug\MongoDB使用_02_细说增删改查.pdb

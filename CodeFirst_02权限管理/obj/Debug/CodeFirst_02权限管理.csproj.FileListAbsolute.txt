@@ -1,0 +1,10 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\CodeFirst_02权限管理\bin\Debug\CodeFirst_02权限管理.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\CodeFirst_02权限管理\bin\Debug\EntityFramework.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\CodeFirst_02权限管理\bin\Debug\EntityFramework.xml
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\CodeFirst_02权限管理\obj\Debug\CodeFirst_02权限管理.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\CodeFirst_02权限管理\bin\Debug\CodeFirst_02权限管理.dll.config
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\CodeFirst_02权限管理\bin\Debug\CodeFirst_02权限管理.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\CodeFirst_02权限管理\bin\Debug\AutoMapper.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\CodeFirst_02权限管理\bin\Debug\AutoMapper.xml
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\CodeFirst_02权限管理\obj\Debug\CodeFirst_02权限管理.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\CodeFirst_02权限管理\obj\Debug\CodeFirst_02权限管理.csprojResolveAssemblyReference.cache

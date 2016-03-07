@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="/lib/jquery.js"></script>
+    <script src="/lib/underscore.js"></script>
+    <script src="/lib/backbone.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+</body>
+</html>
+<script type="text/javascript">
+    //Backbone.sync：使用匿名函数重载持久化存储。这个属性允许在不抛出异常信息的前提下使用 Model.destroy()。
+    //ItemViews 对于每个条目响应两个点击动作，交换与删除。
+    //initialize() 绑定模型更改与删除到适当的事件。
+    //render() 包含两个额外的span以响应交换与删除事件。
+    //unrender()：让模型从DOM中移除它自己。
+    //swap() 会在内部交换条目的属性，当.set()模型函数被调用，事务更新将会被触发。
+    //remove()：我们使用destroy()方法从集合中移除模型。通常这也会从持久存储中删除记录，但是我们重载了它（参考以上例子）。
+
+    //http://my.oschina.net/bairrfhoinn/blog/66293  教程
+
+    //juicer.js 轻量的前端 (Javascript) 模板引擎  http://juicer.name/docs/docs_zh_cn.html
+
+
+    (function ($) {
+        //Backbone.sync = function (method, model, success, error) {
+        //    success();
+        //};
+
+        var Item = Backbone.Model.extend({
+            defaults: {
+                part1: "Hello",
+                part2: "World"
+            }
+        });
+
+        var List = Backbone.Collection.extend({
+            model: Item
+        });
+
+        var ItemList = Backbone.View.extend({
+            tagName: "li",
+            events: {
+                "click span.swap": "swap",
+                "click span.remove": "remove"
+            },
+            initialize: function () {
+                _.bindAll(this, "render", "unrender", "swap", "remove");
+                this.model.bind("change", this.render);
+                this.model.bind("remove", this.unrender);
+                
+            },
+            render: function () {
+                $(this.el).html('<span style="color:black;">' + this.model.get('part1') + ' ' + this.model.get('part2') + '</span> &nbsp; &nbsp; <span class="swap" style="font-family:sans-serif; color:blue; cursor:pointer;">[交换]</span> <span class="remove" style="cursor:pointer; color:red; font-family:sans-serif;">[删除]</span>');
+                return this;
+            },
+            unrender: function () {
+                $(this.el).remove();
+            },
+            swap: function () {
+                var swaped = {
+                    part1: this.model.get("part2"),
+                    part2: this.model.get("part1")
+                };
+                this.model.set(swaped);
+            },
+            remove: function () {
+                this.model.destroy();
+            }
+        })
+
+        var ListView = Backbone.View.extend({
+            el: $("body"),
+            events: {
+                "click button#add": "addItem"
+            },
+            initialize: function () {
+                _.bindAll(this, "render", "addItem", "appendItem");
+
+                this.collection = new List();
+                this.collection.bind("add", this.appendItem);
+                this.counter = 0;
+                this.render();
+            },
+            render: function () {
+                var self = this;
+                $(this.el).append('<button id="add">添加HelloWorld</button>');
+                $(this.el).append('<ul></ul>');
+                //alert(this.collection.models.length);
+                _(this.collection.models).each(function (item) {
+                    self.appendItem(item);
+                }, this)
+            },
+            addItem: function () {
+                this.counter++;
+                var item = new Item();
+                item.set({ "part2": item.get("part2") + this.counter });
+                this.collection.add(item);
+            },
+            appendItem: function (item) {
+                var itemView = new ItemList({
+                    model: item
+                });
+                $('ul', this.el).append(itemView.render().el);
+            }
+        })
+
+        var listview = new ListView();
+    })(jQuery)
+
+    Myself = function () {
+        function alert() { }
+    }
+
+    (function () {
+        function e(e) {
+            $("").tempfunc();
+        }
+        function t(e) {
+
+        }
+    })
+
+    $.fn.temp = function () {
+        alert('');
+    }
+
+    $.fn.tempfunc = function () {
+        var total = 0;
+        return function () { total + 1 };
+    }
+
+</script>

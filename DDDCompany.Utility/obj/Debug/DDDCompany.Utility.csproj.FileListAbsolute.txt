@@ -1,0 +1,4 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DDDCompany.Utility\bin\Debug\DDDCompany.Utility.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DDDCompany.Utility\bin\Debug\DDDCompany.Utility.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DDDCompany.Utility\obj\Debug\DDDCompany.Utility.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\DDDCompany.Utility\obj\Debug\DDDCompany.Utility.pdb

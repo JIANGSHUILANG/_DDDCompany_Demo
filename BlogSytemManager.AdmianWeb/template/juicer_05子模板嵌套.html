@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="/lib/jquery.js"></script>
+    <script src="/lib/juicer.js"></script>
+</head>
+<body>
+    <div id="dv">
+    </div>
+</body>
+</html>
+
+<script id="tpl_01" type="text/template">
+    <a>http://www.google.com</a>
+</script>
+
+<script type="text/juicer" id="subTpl">
+    
+	I'm sub content, ${name}
+    
+</script>
+
+
+
+<script>
+    $(function () {
+        var json={
+            subData: {
+                         name: 'juicer'
+                     }
+        };
+
+        var tpl = '{@include "#subTpl",temp}';
+        
+        var html = juicer("#tpl_01");
+
+        $("#dv").append(html);
+        //var tpl = 'Hi, {@include "#subTpl", subData}, End.';
+
+        //juicer(tpl, {
+        //    subData: {
+        //        name: 'juicer'
+        //    }
+        //});
+
+        //输出 Hi, I'm sub content, juicer, End.
+        //或者通过数据引入子模板，下述代码也将会有相同的渲染结果：
+
+        // var tpl = 'Hi, {@include subTpl, subData}, End.';
+
+        //var html= juicer(tpl, {
+        //     subTpl: "I'm sub content, ${name}",
+        //     subData: {
+        //         name: 'juicer'
+        //     }
+        //});
+
+        //console.log(html);
+    })
+</script>

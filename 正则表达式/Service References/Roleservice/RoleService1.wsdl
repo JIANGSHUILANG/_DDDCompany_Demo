@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://www.CC.com" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.CC.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.CC.com/Imports">
+      <xsd:import schemaLocation="http://localhost:7911/RoleService.svc?xsd=xsd0" namespace="http://www.CC.com" />
+      <xsd:import schemaLocation="http://localhost:7911/RoleService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:7911/RoleService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BlogSytemManager.DomainObject" />
+      <xsd:import schemaLocation="http://localhost:7911/RoleService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IRoleService_GetAllRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRole" />
+  </wsdl:message>
+  <wsdl:message name="IRoleService_GetAllRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoleService_GetRoleById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoleById" />
+  </wsdl:message>
+  <wsdl:message name="IRoleService_GetRoleById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoleByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoleService_DeleteRoleById_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRoleById" />
+  </wsdl:message>
+  <wsdl:message name="IRoleService_DeleteRoleById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRoleByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoleService_DeleteRoles_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRoles" />
+  </wsdl:message>
+  <wsdl:message name="IRoleService_DeleteRoles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoleService_UpdateRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRole" />
+  </wsdl:message>
+  <wsdl:message name="IRoleService_UpdateRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoleService_UpdateRoles_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRoles" />
+  </wsdl:message>
+  <wsdl:message name="IRoleService_UpdateRoles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoleService_CreateRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateRole" />
+  </wsdl:message>
+  <wsdl:message name="IRoleService_CreateRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateRoleResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IRoleService">
+    <wsdl:operation name="GetAllRole">
+      <wsdl:input wsaw:Action="http://www.CC.com/IRoleService/GetAllRole" message="tns:IRoleService_GetAllRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.CC.com/IRoleService/GetAllRoleResponse" message="tns:IRoleService_GetAllRole_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleById">
+      <wsdl:input wsaw:Action="http://www.CC.com/IRoleService/GetRoleById" message="tns:IRoleService_GetRoleById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.CC.com/IRoleService/GetRoleByIdResponse" message="tns:IRoleService_GetRoleById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRoleById">
+      <wsdl:input wsaw:Action="http://www.CC.com/IRoleService/DeleteRoleById" message="tns:IRoleService_DeleteRoleById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.CC.com/IRoleService/DeleteRoleByIdResponse" message="tns:IRoleService_DeleteRoleById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRoles">
+      <wsdl:input wsaw:Action="http://www.CC.com/IRoleService/DeleteRoles" message="tns:IRoleService_DeleteRoles_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.CC.com/IRoleService/DeleteRolesResponse" message="tns:IRoleService_DeleteRoles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRole">
+      <wsdl:input wsaw:Action="http://www.CC.com/IRoleService/UpdateRole" message="tns:IRoleService_UpdateRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.CC.com/IRoleService/UpdateRoleResponse" message="tns:IRoleService_UpdateRole_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRoles">
+      <wsdl:input wsaw:Action="http://www.CC.com/IRoleService/UpdateRoles" message="tns:IRoleService_UpdateRoles_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.CC.com/IRoleService/UpdateRolesResponse" message="tns:IRoleService_UpdateRoles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateRole">
+      <wsdl:input wsaw:Action="http://www.CC.com/IRoleService/CreateRole" message="tns:IRoleService_CreateRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.CC.com/IRoleService/CreateRoleResponse" message="tns:IRoleService_CreateRole_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,8 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\各种IOC框架\bin\Debug\各种IOC框架.exe.config
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\各种IOC框架\bin\Debug\各种IOC框架.exe
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\各种IOC框架\bin\Debug\各种IOC框架.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\各种IOC框架\bin\Debug\EntityFramework.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\各种IOC框架\bin\Debug\EntityFramework.xml
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\各种IOC框架\obj\Debug\各种IOC框架.csprojResolveAssemblyReference.cache
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\各种IOC框架\obj\Debug\各种IOC框架.exe
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\各种IOC框架\obj\Debug\各种IOC框架.pdb

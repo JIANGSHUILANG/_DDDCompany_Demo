@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="BlogSytemManager.Service.PermissionService" CodeBehind="PermissionService.svc.cs" %>

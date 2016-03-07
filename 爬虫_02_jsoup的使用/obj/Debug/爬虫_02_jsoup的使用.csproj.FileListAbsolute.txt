@@ -1,0 +1,4 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\爬虫_02_jsoup的使用\bin\Debug\爬虫_02_jsoup的使用.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\爬虫_02_jsoup的使用\bin\Debug\爬虫_02_jsoup的使用.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\爬虫_02_jsoup的使用\obj\Debug\爬虫_02_jsoup的使用.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\爬虫_02_jsoup的使用\obj\Debug\爬虫_02_jsoup的使用.pdb

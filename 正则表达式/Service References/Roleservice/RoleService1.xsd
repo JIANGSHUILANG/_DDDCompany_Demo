@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/BlogSytemManager.DomainObject" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BlogSytemManager.DomainObject" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:7911/RoleService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfRoleObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RoleObject" nillable="true" type="tns:RoleObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRoleObject" nillable="true" type="tns:ArrayOfRoleObject" />
+  <xs:complexType name="RoleObject">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ActionInfos" nillable="true" type="tns:ArrayOfActionInfoObject" />
+          <xs:element minOccurs="0" name="DelFlag" type="xs:short" />
+          <xs:element minOccurs="0" name="ID" type="xs:int" />
+          <xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RoleName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RoleType" type="xs:short" />
+          <xs:element minOccurs="0" name="SubTime" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="UserInfos" nillable="true" type="tns:ArrayOfUserInfoObject" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RoleObject" nillable="true" type="tns:RoleObject" />
+  <xs:complexType name="BaseObject">
+    <xs:sequence />
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="BaseObject" nillable="true" type="tns:BaseObject" />
+  <xs:complexType name="ArrayOfActionInfoObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ActionInfoObject" nillable="true" type="tns:ActionInfoObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfActionInfoObject" nillable="true" type="tns:ArrayOfActionInfoObject" />
+  <xs:complexType name="ActionInfoObject">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ActionInfoName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DelFalg" type="xs:short" />
+          <xs:element minOccurs="0" name="HttpMethod" type="xs:short" />
+          <xs:element minOccurs="0" name="ID" type="xs:int" />
+          <xs:element minOccurs="0" name="IsMenu" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Roles" nillable="true" type="tns:ArrayOfRoleObject" />
+          <xs:element minOccurs="0" name="SubTime" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Url" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserInfos" nillable="true" type="tns:ArrayOfUserInfoObject" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ActionInfoObject" nillable="true" type="tns:ActionInfoObject" />
+  <xs:complexType name="ArrayOfUserInfoObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserInfoObject" nillable="true" type="tns:UserInfoObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserInfoObject" nillable="true" type="tns:ArrayOfUserInfoObject" />
+  <xs:complexType name="UserInfoObject">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ActionInfos" nillable="true" type="tns:ArrayOfActionInfoObject" />
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ID" type="xs:int" />
+          <xs:element minOccurs="0" name="RegTime" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Roles" nillable="true" type="tns:ArrayOfRoleObject" />
+          <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserPass" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UserInfoObject" nillable="true" type="tns:UserInfoObject" />
+</xs:schema>

@@ -1,0 +1,141 @@
+﻿<#@ template language="C#" HostSpecific="True" #>
+<#
+MvcTextTemplateHost mvcHost = (MvcTextTemplateHost)(Host);
+#>
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using BlogSytemManager.DomainObject;
+using BlogSytemManager.Infrastructure.Communication;
+using BlogSytemManager.IService;
+using BlogSytemManager.AdmianWeb.Models;
+
+namespace <#= mvcHost.Namespace #>
+{
+ public class <#= mvcHost.ControllerName #> : BaseAdminController
+ {
+		 #region CURD
+		   public ActionResult Index(int pageIndex = 1, int pageSize = 15)
+        {
+            if (Session["MessageStaus"] != null)
+            {
+                ViewBag.message = Session["MessageStaus"].ToString();
+                Session.Remove("MessageStaus");
+            }
+            var temp = new <#= mvcHost.ControllerRootName #>ObjectPageOfItems();
+            using (ServiceProxy<I<#= mvcHost.ControllerRootName #>Service> client = new ServiceProxy<I<#= mvcHost.ControllerRootName #>Service>())
+            {
+                temp = client.Channel.Get<#= mvcHost.ControllerRootName #>pageOfitems(pageIndex, pageSize, new <#= mvcHost.ControllerRootName #>ObjectPageOfItems());
+				 ViewBag.AllCount=temp.AllCount;
+                ViewBag.pageIndex = pageIndex;
+                ViewBag.pageCount = temp.TotalCount;
+            }
+            return View((List<<#= mvcHost.ControllerRootName #>Object>)temp.<#= mvcHost.ControllerRootName #>ObjectLists);
+        }
+
+        public ActionResult Details(string id = null)
+        {
+            var temp=new <#= mvcHost.ControllerRootName #>Object();
+     using (ServiceProxy<I<#= mvcHost.ControllerRootName #>Service> client = new ServiceProxy<I<#= mvcHost.ControllerRootName #>Service>())
+            {
+                 temp = client.Channel.Get<#= mvcHost.ControllerRootName #>ById(Convert.ToInt32(id));
+     if (temp == null)
+            {
+                return HttpNotFound();
+            }
+            }          
+            return View(temp);
+        }
+
+        public ActionResult Create()
+        {
+            return View();
+        }
+   
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(<#= mvcHost.ControllerRootName #>Object model)
+        {
+            if (ModelState.IsValid)
+            {
+                 using (ServiceProxy<I<#= mvcHost.ControllerRootName #>Service> client = new ServiceProxy<I<#= mvcHost.ControllerRootName #>Service>())
+            {
+                var temp = client.Channel.Create<#= mvcHost.ControllerRootName #>(model);
+            }
+                return RedirectToAction("/<#= mvcHost.ControllerRootName #>/Index");
+            }
+
+            return View(model);
+        }
+
+   public ActionResult Edit(string id = null)
+        {
+
+           var temp=new <#= mvcHost.ControllerRootName #>Object();
+   using (ServiceProxy<I<#= mvcHost.ControllerRootName #>Service> client = new ServiceProxy<I<#= mvcHost.ControllerRootName #>Service>())
+            {
+                 temp = client.Channel.Get<#= mvcHost.ControllerRootName #>ById(Convert.ToInt32(id));
+    if (temp == null)
+    {
+      return HttpNotFound();
+    }
+            }          
+            return View(temp);
+        }
+         
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(<#= mvcHost.ControllerRootName #>Object model)
+        {
+    MessageStaus message = default(MessageStaus);
+            if (ModelState.IsValid)
+            {
+                 using (ServiceProxy<I<#= mvcHost.ControllerRootName #>Service> client = new ServiceProxy<I<#= mvcHost.ControllerRootName #>Service>())
+     {
+     if (model == null)
+     {
+         return HttpNotFound();
+     }
+   message= client.Channel.Update<#= mvcHost.ControllerRootName #>(model)?MessageStaus.修改失败 : MessageStaus.修改成功;
+     }
+            }
+     Session["MessageStaus"] = message;
+             return RedirectToAction("/<#= mvcHost.ControllerRootName #>/Index");
+        }
+   
+        public ActionResult Delete(string id = null)
+        {
+   MessageStaus message = default(MessageStaus);
+          var temp=new <#= mvcHost.ControllerRootName #>Object();
+     using (ServiceProxy<I<#= mvcHost.ControllerRootName #>Service> client = new ServiceProxy<I<#= mvcHost.ControllerRootName #>Service>())
+            {
+                 temp = client.Channel.Get<#= mvcHost.ControllerRootName #>ById(Convert.ToInt32(id));
+        if (temp == null)
+            {
+                return HttpNotFound();
+            }
+   message= client.Channel.Delete<#= mvcHost.ControllerRootName #>ById(Convert.ToInt32(id))?MessageStaus.操作失败 : MessageStaus.操作成功;
+            }   
+   Session["MessageStaus"] = message;
+          return RedirectToAction("/<#= mvcHost.ControllerRootName #>/Index");
+        }
+
+   public ActionResult Deletes(string[] ids)
+   {
+      MessageStaus message = default(MessageStaus);
+      using (ServiceProxy<I<#= mvcHost.ControllerRootName #>Service> client = new ServiceProxy<I<#= mvcHost.ControllerRootName #>Service>())
+     {
+     if (ids == null)
+     {
+         return HttpNotFound();
+     }
+     message = client.Channel.Delete<#= mvcHost.ControllerRootName #>s(ids)? MessageStaus.操作失败 : MessageStaus.操作成功;
+     }
+	   Session["MessageStaus"] = message;
+     return RedirectToAction("/<#= mvcHost.ControllerRootName #>/Index");
+   }
+		#endregion
+ }
+}

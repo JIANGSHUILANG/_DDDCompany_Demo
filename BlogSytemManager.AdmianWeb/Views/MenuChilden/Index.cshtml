@@ -1,0 +1,123 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutblogSystemManager.cshtml";
+}
+
+
+@using BlogSytemManager.DomainObject
+@model  List<MenuChildenObject>
+<!-- content start -->
+<div class="admin-content">
+
+    <div class="am-cf am-padding">
+        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">菜单之类管理</strong>/ <small>列表</small></div>
+    </div>
+
+    <div class="am-g">
+        <div class='am-u-sm-12 am-u-md-6'>
+            @using BlogSytemManager.AdmianWeb.Models.MVCExtenstion
+            @{
+                var dic = new Dictionary<EnumInsert_Del_Edit_Audit, string>();
+                dic.Add(EnumInsert_Del_Edit_Audit.Create, "");
+                dic.Add(EnumInsert_Del_Edit_Audit.Audit, "");
+            }
+            @Html.Insert_Del_Edit_Audit(dic)
+        </div>
+        <div class="am-u-sm-12 am-u-md-3">
+            <div class="am-input-group am-input-group-sm">
+                <input type="text" class="am-form-field" id="searchvalue" name="MenuChildenName">
+                <span class="am-input-group-btn">
+                    <button class="am-btn am-btn-default" onclick="SearchTop('MenuChilden','searchvalue')" type="button">搜索</button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="am-g">
+        <div class="am-u-sm-12">
+            <form class="am-form">
+                <table class="am-table am-table-striped am-table-hover table-main">
+                    <thead>
+                        <tr>
+                            <th class="table-check">
+                                <input type="checkbox" /></th>
+                            <th class="table-id">ID</th>
+                            <th class="table-title">菜单之类名称</th>
+                            <th class="table-id">对应Url</th>
+                            <th class="table-id">父级ID</th>
+                            <th class="table-type">是否删除</th>
+                            <th class="table-author am-hide-sm-only">创建日期</th>
+                            <th class="table-author am-hide-sm-only">修改日期</th>
+                            <th class="table-set">排序</th>
+                            <th class="table-set">备注</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    <input type="checkbox" value="@item.ID" /></td>
+                                <td>@item.ID</td>
+                                <td><a href="#">@item.MenuChildenName</a></td>
+                                <td><a href="#">@item.Url</a></td>
+                                <td><a href="#">@item.Parent_ID</a></td>
+                                <td>@(item.DelFlag == 0 ? "已删" : "")</td>
+                                <td class="am-hide-sm-only">@item.CreateTime.Value.ToShortDateString()</td>
+                                <td class="am-hide-sm-only">@item.UpdateTime.Value.ToShortDateString()</td>
+                                <td class="am-hide-sm-only">@item.shot</td>
+                                <td class="am-hide-sm-only">@(string.IsNullOrEmpty(item.content)?"暂无备注信息":item.content)</td>
+                                <td>
+                                    <div class="am-btn-toolbar">
+                                        <div class="am-btn-group am-btn-group-xs">
+                                            @{
+                            var updatedelete = new Dictionary<EnumInsert_Del_Edit_Audit, string>();
+                            updatedelete.Add(EnumInsert_Del_Edit_Audit.Edit, "id=" + item.ID);
+                            updatedelete.Add(EnumInsert_Del_Edit_Audit.Delete, "id=" + item.ID);
+                                            }
+                                            @Html.Insert_Del_Edit_Audit(updatedelete)
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+                <div class="am-cf">
+                    共 @ViewBag.AllCount 条记录
+ 
+                    <div class="am-fr">
+                        <ul class="am-pagination">
+                            @using BlogSytemManager.Infrastructure._PageOfItems
+                            @MvcHtmlString.Create(MyPageBar.ShowMyPageBar((int)ViewBag.pageIndex, (int)ViewBag.pageCount))
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <input type="hidden" value="@ViewBag.message" id="_message" />
+</div>
+<div class="am-modal am-modal-alert" tabindex="-1" id="my-alert">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd">Amaze UI</div>
+        <div class="am-modal-bd">
+            Hello world！
+        </div>
+        <div class="am-modal-footer">
+            <span class="am-modal-btn">确定</span>
+        </div>
+    </div>
+</div>
+<!-- content end -->
+<script type="text/javascript">
+    $(function () {
+        if ($("#_message").val().trim() != "") {
+            alert($("#_message").val());
+        }
+    })
+</script>
+

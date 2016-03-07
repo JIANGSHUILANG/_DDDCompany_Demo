@@ -1,0 +1,5 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WebApp\bin\WebApp.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WebApp\bin\WebApp.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WebApp\obj\Debug\WebApp.csprojResolveAssemblyReference.cache
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WebApp\obj\Debug\WebApp.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WebApp\obj\Debug\WebApp.pdb

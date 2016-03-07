@@ -1,0 +1,5 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用\bin\Debug\MongoDB使用.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用\obj\Debug\MongoDB使用.csprojResolveAssemblyReference.cache
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用\obj\Debug\MongoDB使用.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用\bin\Debug\MongoDB使用.exe
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用\obj\Debug\MongoDB使用.exe

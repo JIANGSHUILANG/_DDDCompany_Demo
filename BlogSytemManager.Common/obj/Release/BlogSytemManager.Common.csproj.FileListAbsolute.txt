@@ -1,0 +1,13 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.Common\bin\Release\BlogSytemManager.Common.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.Common\bin\Release\BlogSytemManager.Common.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.Common\bin\Release\AutoMapper.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.Common\bin\Release\BlogSytemManager.DomainObject.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.Common\bin\Release\BolgSytemManager.Domain.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.Common\bin\Release\EntityFramework.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.Common\bin\Release\BlogSytemManager.DomainObject.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.Common\bin\Release\BolgSytemManager.Domain.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.Common\bin\Release\AutoMapper.xml
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.Common\bin\Release\EntityFramework.xml
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.Common\obj\Release\BlogSytemManager.Common.csprojResolveAssemblyReference.cache
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.Common\obj\Release\BlogSytemManager.Common.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\BlogSytemManager.Common\obj\Release\BlogSytemManager.Common.pdb

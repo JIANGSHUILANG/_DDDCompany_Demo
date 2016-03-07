@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="/lib/css/swiper.min.css" rel="stylesheet" />
+    <script src="/lib/jquery.js"></script>
+    <script src="/lib/juicer.js"></script>
+    <script src="/lib/underscore.js"></script>
+    <script src="/lib/backbone.js"></script>
+    <script src="/lib/swiper.min.js"></script>
+
+    <!--打开下载的文件中的idangerous.swiper.css，设置Swiper's的宽度以及高度（在文件的末尾）-->
+    <style>
+        #dv {
+            box-shadow: 10px 10px 10px 10px inset;
+        }
+    </style>
+</head>
+<body>
+    <div id="dv">
+    </div>
+</body>
+</html>
+
+<script id="tpl" type="text/template">
+
+    <li>
+        <span>${defaults.parm1}</span>:<span>${defaults.parm2}</span>
+        &nbsp;&nbsp;
+        <span class="swrp" style="color: green; cursor: pointer;">[替换]</span>
+        &nbsp;&nbsp;
+         <span class="remove" style="color: red; cursor: pointer;">[删除]</span>
+
+    </li>
+
+</script>
+
+<script type="text/javascript">
+    $(function () {
+        ccc.call(this);
+    })
+
+
+    function ccc() { }
+    //$(function () {
+    //    var object = {};
+    //    _.extend(object, Backbone.Events);
+
+    //    object.on("alert", function (msg) {
+    //        alert("triggered " + msg);
+    //    })
+
+    //    function a(xx) {
+    //        this.b = xx;
+    //    }
+
+    //    var o = {};
+    //    a.apply();
+    //})
+    (function ($) {
+
+
+
+        var Item = Backbone.Model.extend({
+            defaults: {
+                parm1: "bobo",
+                parm2: "123456"
+            }
+        })
+
+        var List = Backbone.Collection.extend({
+            model: Item
+        })
+
+        var ListView = Backbone.View.extend({
+            el: $("body"),
+            events: {
+                "click button#btn": "addItem",
+                "click span.swrp": "swrp",
+                "click span.remove": "remove",
+            },
+            initialize: function () {
+                _.bindAll(this, "render", "unrender", "addItem", "swrp", "remove");
+                this.counter = 0;
+                this.render();
+            },
+            render: function () {
+                $(this.el).append("<button id='btn'>Add Item</button></br>");
+                $(this.el).append("<ul></ul>");
+
+            },
+            swrp: function () {
+
+
+            },
+            unrender: function () {
+                $(this.el).remove();
+            },
+            remove: function () {
+                this.model.destory();
+            },
+            addItem: function () {
+                this.counter++;
+                var item = new Item();
+                item = item.set({
+                    parm1: item.get("parm1") + "_" + this.counter,
+                    parm2: item.get("parm2")
+                });
+
+                var html = juicer("#tpl", item);
+                $("body ul").append(html);
+            }
+        })
+
+        var listview = new ListView();
+    })(jQuery);
+
+
+    (function () {
+        alert('cc');
+    }).call(this)
+
+
+</script>
+
+
+

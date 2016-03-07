@@ -1,0 +1,5 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Test._BoBo\bin\Test._BoBo.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Test._BoBo\bin\Test._BoBo.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Test._BoBo\obj\Debug\Test._BoBo.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Test._BoBo\obj\Debug\Test._BoBo.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Test._BoBo\obj\Debug\Test._BoBo.csprojResolveAssemblyReference.cache

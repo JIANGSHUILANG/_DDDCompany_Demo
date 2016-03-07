@@ -1,0 +1,5 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\支持XML序列化的Dictionary\bin\Debug\支持XML序列化的Dictionary.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\支持XML序列化的Dictionary\bin\Debug\支持XML序列化的Dictionary.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\支持XML序列化的Dictionary\obj\Debug\支持XML序列化的Dictionary.csprojResolveAssemblyReference.cache
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\支持XML序列化的Dictionary\obj\Debug\支持XML序列化的Dictionary.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\支持XML序列化的Dictionary\obj\Debug\支持XML序列化的Dictionary.pdb

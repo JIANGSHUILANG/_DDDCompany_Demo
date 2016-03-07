@@ -1,0 +1,63 @@
+﻿@using BlogSytemManager.DomainObject
+@model UserInfoObject
+
+<ul class="am-list admin-sidebar-list">
+    @{
+        var userInfoMenus = Model.Menus.OrderBy(c => c.shot);
+        var userInfoRole = Model.Roles;
+        if (userInfoRole.Count() > 0)
+        {
+            foreach (var role in userInfoRole)
+            {
+                var menus = role.Menus.OrderBy(c => c.shot).ToList();
+                foreach (var menu in menus)
+                {
+                    var rolemenuchildens = menu.MenuChildens;
+                    if (rolemenuchildens.Count() == 0)
+                    {
+        <li><a href="@menu.Url"><span class="am-icon-home">@menu.MenuName</span></a></li>
+                    }
+                    else if (rolemenuchildens.Count() > 1)
+                    {
+        <li class="admin-parent">
+            <a class="am-cf" data-am-collapse="{target: '#collapse-nav'}" href="@rolemenuchildens[0].Url"><span class="am-icon-file"></span>@menu.MenuName <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+            <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav">
+                @foreach (var menuchilden in rolemenuchildens)
+                {
+                    <li><a href="@menuchilden.Url" class="am-cf"><span class="am-icon-check"></span>@menuchilden.MenuChildenName</a></li>
+                }
+            </ul>
+        </li>
+                    }
+               }
+            }
+        }
+        else if (userInfoMenus.Count() > 0) //菜单个数大于 0
+        {
+            foreach (var menu in userInfoMenus)
+            {
+                var userInfoMenuChildens = menu.MenuChildens;
+                if (userInfoMenuChildens.Count() == 0)
+                {
+        <li><a href="@menu.Url"><span class="am-icon-home">@menu.MenuName</span></a></li>
+                }
+                else if (userInfoMenuChildens.Count() > 1)
+                {
+        <li class="admin-parent">
+            <a class="am-cf" data-am-collapse="{target: '#collapse-nav'}" href="@userInfoMenuChildens[0].Url"><span class="am-icon-file"></span>@menu.MenuName <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+            <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav">
+                @foreach (var menuchilden in userInfoMenuChildens)
+                {
+                    <li><a href="@menuchilden.Url" class="am-cf"><span class="am-icon-check"></span>@menuchilden.MenuChildenName</a></li>
+                }
+            </ul>
+        </li>
+                }
+            }
+        }
+    }
+
+    @*  <li><a href="admin-table.html"><span class="am-icon-table"></span>表格</a></li>
+                    <li><a href="admin-form.html"><span class="am-icon-pencil-square-o"></span>表单</a></li>
+                    <li><a href="#"><span class="am-icon-sign-out"></span>注销</a></li>*@
+</ul>

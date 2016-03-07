@@ -1,0 +1,1 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Lib\WCF传递参数不支持序列化解决方案\expressiontree-9804\T4ExpressionSerializer\obj\x86\Debug\T4ExpressionSerializer.csprojResolveAssemblyReference.cache

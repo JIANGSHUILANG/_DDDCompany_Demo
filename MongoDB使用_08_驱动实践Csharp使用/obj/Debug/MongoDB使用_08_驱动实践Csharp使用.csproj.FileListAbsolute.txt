@@ -1,0 +1,9 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用_08_驱动实践Csharp使用\bin\Debug\MongoDB使用_08_驱动实践Csharp使用.exe
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用_08_驱动实践Csharp使用\bin\Debug\MongoDB使用_08_驱动实践Csharp使用.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用_08_驱动实践Csharp使用\bin\Debug\MongoDB.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用_08_驱动实践Csharp使用\bin\Debug\MongoDB.GridFS.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用_08_驱动实践Csharp使用\bin\Debug\MongoDB.xml
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用_08_驱动实践Csharp使用\bin\Debug\MongoDB.GridFS.xml
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用_08_驱动实践Csharp使用\obj\Debug\MongoDB使用_08_驱动实践Csharp使用.csprojResolveAssemblyReference.cache
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用_08_驱动实践Csharp使用\obj\Debug\MongoDB使用_08_驱动实践Csharp使用.exe
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用_08_驱动实践Csharp使用\obj\Debug\MongoDB使用_08_驱动实践Csharp使用.pdb

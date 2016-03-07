@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="/lib/jquery.js"></script>
+    <script src="/lib/juicer.js"></script>
+</head>
+<body>
+    <div id="dv">
+    </div>
+</body>
+</html>
+
+<script id="tpl" type="text/template">
+    <ul>
+        {@each temp as item}
+        <li>${item.name}</li>
+
+            {@if item.age==10}
+            <li>${item.age}</li>
+            {@else if item.age==22}
+            <li>During</li>
+            {@/if}
+
+        <li>${item.address}</li>
+        {@/each}
+    </ul>
+</script>
+
+
+<script type="text/javascript">
+    $(function () {
+        //alert("123" === '123'); //类型又要相等，值又要相等
+        alert("123"==123); //true
+
+        var data = {
+            temp: [
+                { name: "张三", age: 22, address: "中国北京" }
+            ]
+        };
+
+        var html = juicer("#tpl", data);
+        
+        $("#dv").append(html);
+    })
+</script>

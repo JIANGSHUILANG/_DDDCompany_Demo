@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+        #box {
+            width: 500px;
+            background: #000;
+            height: 500px;
+            background:#808080;
+            overflow:hidden;
+        }
+
+        #content {
+            float: left;
+            width: 600px;
+            height: 600px;
+            background:#857e7e;
+        }
+    </style>
+</head>
+<body>
+    <!--overflow:hidden 清除浮动，content的width,height都比box的大，加了这个样式，#content溢出（多出来的部分）
+    会隐藏掉-->
+    <div id="box">
+        <div id="content"></div>
+    </div>
+</body>
+</html>

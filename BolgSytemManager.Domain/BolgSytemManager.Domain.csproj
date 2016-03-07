@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{283F2B64-1C28-474B-88BD-EC60E8073D38}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BolgSytemManager.Domain</RootNamespace>
+    <AssemblyName>BolgSytemManager.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\Lib\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\AggregateRoot.cs" />
+    <Compile Include="Base\IBaseRepository.cs" />
+    <Compile Include="Base\IEFUnitOfWork.cs" />
+    <Compile Include="Base\IUnitOfWork.cs" />
+    <Compile Include="Base\IUnitOfWorkRepositoryContext.cs" />
+    <Compile Include="IRepositories\IRoleRepository.cs" />
+    <Compile Include="IRepositories\IActionInfoRepository.cs" />
+    <Compile Include="IRepositories\IUserInfoRepository.cs" />
+    <Compile Include="IRepositories\IMenuRepository.cs" />
+    <Compile Include="IRepositories\IMenuChildenRepository.cs" />
+    <Compile Include="IRepositories\IPermissionRepository.cs" />
+    <Compile Include="IRepositories\IBlogRepository.cs" />
+    <Compile Include="IRepositories\ICommentRepository.cs" />
+    <Compile Include="Model\Blog.cs" />
+    <Compile Include="Model\Comment.cs" />
+    <Compile Include="Model\Menu.cs" />
+    <Compile Include="Model\ActionGroup.cs" />
+    <Compile Include="Model\MenuChilden.cs" />
+    <Compile Include="Model\Permission.cs" />
+    <Compile Include="Model\Setting.cs" />
+    <Compile Include="Model\Role.cs" />
+    <Compile Include="Model\UserInfo.cs" />
+    <Compile Include="Model\ActionInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BlogSytemManager.DomainObject\BlogSytemManager.DomainObject.csproj">
+      <Project>{776c1d70-929f-4dfc-a085-86fcfd6000eb}</Project>
+      <Name>BlogSytemManager.DomainObject</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

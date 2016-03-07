@@ -1,0 +1,5 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\AES加密解密\bin\Debug\AES加密解密.exe
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\AES加密解密\bin\Debug\AES加密解密.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\AES加密解密\obj\Debug\AES加密解密.exe
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\AES加密解密\obj\Debug\AES加密解密.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\AES加密解密\obj\Debug\AES加密解密.csprojResolveAssemblyReference.cache

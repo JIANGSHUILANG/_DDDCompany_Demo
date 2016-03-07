@@ -1,0 +1,6 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Lib\WCF传递参数不支持序列化解决方案\expressiontree-9804\ExpressionSerialization\bin\Debug\ExpressionSerialization.dll.config
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Lib\WCF传递参数不支持序列化解决方案\expressiontree-9804\ExpressionSerialization\bin\Debug\ExpressionSerialization.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Lib\WCF传递参数不支持序列化解决方案\expressiontree-9804\ExpressionSerialization\bin\Debug\ExpressionSerialization.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Lib\WCF传递参数不支持序列化解决方案\expressiontree-9804\ExpressionSerialization\obj\Debug\ExpressionSerialization.csprojResolveAssemblyReference.cache
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Lib\WCF传递参数不支持序列化解决方案\expressiontree-9804\ExpressionSerialization\obj\Debug\ExpressionSerialization.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\Lib\WCF传递参数不支持序列化解决方案\expressiontree-9804\ExpressionSerialization\obj\Debug\ExpressionSerialization.pdb

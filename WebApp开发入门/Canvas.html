@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+</head>
+<body>
+    <canvas id="mycanvas" width="200" height="200"></canvas>
+</body>
+</html>
+<script type="text/javascript">
+    var c = document.getElementById("mycanvas");
+    var cxt = c.getContext("2d");
+
+    //cxt.fillStyle = "#FF0000";
+    //cxt.fillRect(0,0,150,75); //fillRect(x,y,width,height)
+    //cxt.stroke();//这句代码是开始画画
+
+
+    cxt.beginPath();
+    cxt.moveTo(0, 0);  //指定一个起点坐标 x:0   y：0
+    cxt.lineTo(300, 150); //指定一个终点坐标 x:300   y：150
+    cxt.stroke();
+</script>

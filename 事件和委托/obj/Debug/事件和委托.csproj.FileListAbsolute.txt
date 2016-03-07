@@ -1,0 +1,5 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\事件和委托\bin\Debug\事件和委托.exe
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\事件和委托\bin\Debug\事件和委托.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\事件和委托\obj\Debug\事件和委托.exe
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\事件和委托\obj\Debug\事件和委托.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\事件和委托\obj\Debug\事件和委托.csprojResolveAssemblyReference.cache

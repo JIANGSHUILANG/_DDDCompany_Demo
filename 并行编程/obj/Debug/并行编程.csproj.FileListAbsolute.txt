@@ -1,0 +1,9 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\并行编程\bin\Debug\并行编程.exe.config
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\并行编程\bin\Debug\并行编程.exe
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\并行编程\bin\Debug\并行编程.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\并行编程\bin\Debug\EntityFramework.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\并行编程\bin\Debug\EntityFramework.xml
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\并行编程\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\并行编程\obj\Debug\并行编程.csprojResolveAssemblyReference.cache
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\并行编程\obj\Debug\并行编程.exe
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\并行编程\obj\Debug\并行编程.pdb

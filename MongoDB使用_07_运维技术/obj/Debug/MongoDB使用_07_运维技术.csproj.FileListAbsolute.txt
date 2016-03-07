@@ -1,0 +1,4 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用_07_运维技术\bin\Debug\MongoDB使用_07_运维技术.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用_07_运维技术\bin\Debug\MongoDB使用_07_运维技术.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用_07_运维技术\obj\Debug\MongoDB使用_07_运维技术.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\MongoDB使用_07_运维技术\obj\Debug\MongoDB使用_07_运维技术.pdb

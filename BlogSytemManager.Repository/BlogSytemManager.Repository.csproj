@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{611313BA-9F35-4F9F-B7B8-9BBA4DBCBBB4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BlogSytemManager.Repository</RootNamespace>
+    <AssemblyName>BlogSytemManager.Repository</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EmitMapper">
+      <HintPath>..\Lib\EmitMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\BaseRepository.cs" />
+    <Compile Include="EFContext\AfterManageContext.cs" />
+    <Compile Include="Entity_Configuration\CommentConfiguration.cs" />
+    <Compile Include="Entity_Configuration\RoleConfiguration.cs" />
+    <Compile Include="Entity_Configuration\UserInfoConfiguration.cs" />
+    <Compile Include="Entity_Configuration\ActionInfoConfiguration.cs" />
+    <Compile Include="Entity_Configuration\MenuChildenConfiguration.cs" />
+    <Compile Include="Entity_Configuration\MenuConfiguration.cs" />
+    <Compile Include="Entity_Configuration\PermissionConfiguration.cs" />
+    <Compile Include="Entity_Configuration\BlogConfiguration.cs" />
+    <Compile Include="Migrations\201511300622054_Initial.cs" />
+    <Compile Include="Migrations\201511300622054_Initial.Designer.cs">
+      <DependentUpon>201511300622054_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511300949518_Initial1.cs" />
+    <Compile Include="Migrations\201511300949518_Initial1.Designer.cs">
+      <DependentUpon>201511300949518_Initial1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511300954075_Initial2.cs" />
+    <Compile Include="Migrations\201511300954075_Initial2.Designer.cs">
+      <DependentUpon>201511300954075_Initial2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511300955093_Initial3.cs" />
+    <Compile Include="Migrations\201511300955093_Initial3.Designer.cs">
+      <DependentUpon>201511300955093_Initial3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512290655044_Initial4.cs" />
+    <Compile Include="Migrations\201512290655044_Initial4.Designer.cs">
+      <DependentUpon>201512290655044_Initial4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512300200143_AddFnIsPaid.cs" />
+    <Compile Include="Migrations\201512300200143_AddFnIsPaid.Designer.cs">
+      <DependentUpon>201512300200143_AddFnIsPaid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ActionInfoRepository.cs" />
+    <Compile Include="Repositories\RoleRepository.cs" />
+    <Compile Include="Repositories\UserInfoRepository.cs" />
+    <Compile Include="Repositories\MenuChildenRepository.cs" />
+    <Compile Include="Repositories\MenuRepository.cs" />
+    <Compile Include="Repositories\PermissionRepository.cs" />
+    <Compile Include="Repositories\BlogRepository.cs" />
+    <Compile Include="Repositories\CommentRepository.cs" />
+    <Compile Include="Test.cs" />
+    <Compile Include="UnitOfWork\EFUnitOfWork.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BlogSytemManager.DomainObject\BlogSytemManager.DomainObject.csproj">
+      <Project>{776c1d70-929f-4dfc-a085-86fcfd6000eb}</Project>
+      <Name>BlogSytemManager.DomainObject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BlogSytemManager.Infrastructure\BlogSytemManager.Infrastructure.csproj">
+      <Project>{5623d555-f699-4cb3-970c-01237653f87a}</Project>
+      <Name>BlogSytemManager.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BolgSytemManager.Domain\BolgSytemManager.Domain.csproj">
+      <Project>{283f2b64-1c28-474b-88bd-ec60e8073d38}</Project>
+      <Name>BolgSytemManager.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201511300622054_Initial.resx">
+      <DependentUpon>201511300622054_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511300949518_Initial1.resx">
+      <DependentUpon>201511300949518_Initial1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511300954075_Initial2.resx">
+      <DependentUpon>201511300954075_Initial2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511300955093_Initial3.resx">
+      <DependentUpon>201511300955093_Initial3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512290655044_Initial4.resx">
+      <DependentUpon>201512290655044_Initial4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512300200143_AddFnIsPaid.resx">
+      <DependentUpon>201512300200143_AddFnIsPaid.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

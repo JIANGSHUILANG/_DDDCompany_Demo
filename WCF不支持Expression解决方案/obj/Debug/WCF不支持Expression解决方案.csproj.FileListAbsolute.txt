@@ -1,0 +1,6 @@
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WCF不支持Expression解决方案\obj\Debug\WCF不支持Expression解决方案.csprojResolveAssemblyReference.cache
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WCF不支持Expression解决方案\bin\Debug\WCF不支持Expression解决方案.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WCF不支持Expression解决方案\bin\Debug\ExpressionSerialization.dll
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WCF不支持Expression解决方案\obj\Debug\WCF不支持Expression解决方案.pdb
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WCF不支持Expression解决方案\bin\Debug\WCF不支持Expression解决方案.exe
+C:\Users\LoserTwo\Desktop\领域驱动设计\_DDDCompany\WCF不支持Expression解决方案\obj\Debug\WCF不支持Expression解决方案.exe

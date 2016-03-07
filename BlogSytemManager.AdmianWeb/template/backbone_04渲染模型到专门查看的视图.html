@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="/lib/jquery.js"></script>
+    <script src="/lib/underscore.js"></script>
+    <script src="/lib/backbone.js"></script>
+</head>
+<body>
+</body>
+</html>
+<script type="text/javascript">
+    (function ($) {
+        var Item = Backbone.Model.extend({
+            defaults: {
+                part1: 'hello',
+                part2: 'world'
+            }
+        });
+
+        var List = Backbone.Collection.extend({
+            model: Item
+        });
+
+        var ItemView = Backbone.View.extend({
+            tagName: 'li', // name of (orphan) root tag in this.el
+            initialize: function () {
+                _.bindAll(this, 'render'); // every function that uses 'this' as the current object should be in here
+            },
+            render: function () {
+                $(this.el).html('<span>' + this.model.get('part1') + ' ' + this.model.get('part2') + '</span>');
+                return this; // for chainable calls, like .render().el
+            }
+        });
+
+        var ListView = Backbone.View.extend({
+            el: $('body'), // el attaches to existing element
+            events: {
+                'click button#add': 'addItem'
+            },
+            initialize: function () {
+                _.bindAll(this, 'render', 'addItem', 'appendItem'); // every function that uses 'this' as the current object should be in here
+
+                this.collection = new List();
+                this.collection.bind('add', this.appendItem); // collection event binder
+
+                this.counter = 0;
+                this.render();
+            },
+            render: function () {
+                var self = this;
+                $(this.el).append("<button id='add'>Add list item</button>");
+                $(this.el).append("<ul></ul>");
+                _(this.collection.models).each(function (item) { // in case collection is not empty
+                    self.appendItem(item);
+                }, this);
+            },
+            addItem: function () {
+                this.counter++;
+                var item = new Item();
+                item.set({
+                    part2: item.get('part2') + this.counter // modify item defaults
+                });
+                this.collection.add(item);
+            },
+
+            appendItem: function (item) {
+                var itemView = new ItemView({
+                    model: item
+                });
+                $('ul', this.el).append(itemView.render().el);
+                //alert(itemView.render().el);
+            }
+        });
+
+        var listView = new ListView();
+    })(jQuery);
+</script>
