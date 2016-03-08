@@ -21,6 +21,41 @@ namespace MongoDB使用_01_安装和简单增删改查
 
              //cmd -->> 指定那个磁盘 如 D:-->>cd D:\mongodb\bin  回车 -->>输入 mongo （查看版本信息）(打开shell，其实这个shell就是mongodb的客户端)
 
+
+           //错误： 2014-07-25T11:00:48.634+0800 warning: Failed to connect to 127.0.0.1:27017, reason: errno:10061 由于目标计算机积极拒绝，无法连接。
+             //解决方案：在安装mogoDB的文件夹下，新建一个 mongo.config 文件，在文件中输入：
+            //1.
+            // ##数据文件
+            //dbpath=E:\ruanjian\MongoDB\data
+ 
+            //##日志文件
+            //logpath=E:\ruanjian\MongoDB\log\mongo.log
+
+            //2. 新建一个data文件夹
+
+            //3.新建一个log文件夹，文件夹中新建一个mongo.log文件（空文件）
+            //mongod.exe --config E:\ruanjian\MongoDB\mongo.config
+
+
+
+             //大意是：如果您运行的是任何版本的Windows Server 2008 R2或Windows 7，请安装修复程序来解决一个内存映射文件在Windows的问题。
+//             2016-03-08T12:56:05.689+0800 I CONTROL  Hotfix KB2731284 or later update is not installed, will zero-out data files
+//MongoDB shell version: 3.0.6
+//connecting to: test
+//2016-03-08T12:56:06.845+0800 W NETWORK  Failed to connect to 127.0.0.1:27017, re
+//ason: errno:10061 由于目标计算机积极拒绝，无法连接。
+//2016-03-08T12:56:06.848+0800 E QUERY    Error: couldn't connect to server 127.0.
+//0.1:27017 (127.0.0.1), connection attempt failed
+//    at connect (src/mongo/shell/mongo.js:179:14)
+//    at (connect):1:6 at src/mongo/shell/mongo.js:179
+//exception: connect failed
+
+
+//             
+
+
+
+
              //insert:  这里就取集合名为“Person”，要注意的就是文档是一个json的扩展（Bson)形式。如下插入两条数据
              //db.Person.insert({"name":"zhangsan","age":20})
              //db.Person.insert({"name":"li","age":15})       
